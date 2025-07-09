@@ -1,96 +1,100 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
 body {
   margin: 0;
+}
+
+.container {
+  border: 6px solid black;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
+  /* display: inline-flex; */
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
+  /* flex-direction: row-reverse; */
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  /* IMP for responsive design */
+  /* flex-wrap: wrap; if an item is not fit in given length then it moves it to the next line */
+
+  /* flex-flow: direction wrap ; */ /* This is an shorthand for direction + wrap */
+
+  /* column-gap: 20px;
+  row-gap: 20px; */
+
+  /* gap: 20px 20px ; */ /* Shorthand row column */
+
+  /* justify-content: space-evenly; */ /* align item in main axis  */
+
+  /*align-items: center; */ /* align item in cross axis */
+
+  /* default align-item:strach */ /* from top to end (Cross axis) */
+
+  /* Baseline - its used to align items based on texts base line ( the line where all text sits)  */
+
+  /* cross axis content */
+
+  /* align content - aligns all of the rows just like justify but for all rows individually  */
+
+  /* Order (default is 0 so if order is not assign then its 0) */
+
+  /* 
+    flex-grow: 0;
+    
+  Grow (deafult is also 0) we can use it just like 1fr in grid) */
+
+  /*  flex-shring: 1
+  
+    shrink (default is 1) so nothing can shrink
+    If we put flex-shring to 0 thenit wont be shrink
+  */
+
+  /* flex-basis: auto 
+    
+  Initialize an item with an width before grow
+
+  it wont affect the growth 
+  */
+
+
+  /* flex: grow shrink basis;
+    flex: 0 1 auto;
+  */
+
+
+  /* 
+    align-self: auto; ->  default is value of parent (align-item) 
+    align individual items
+  */
+
+
+}
+.flex-item {
+  color: white;
+  font-size: 1.5rem;
+  padding: 1rem;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.item-1 {
+  background-color: #b4bf35;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.item-2 {
+  background-color: #b95f21;
 }
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #f7df1eaa);
+.item-3 {
+  background-color: #1c4c56;
 }
-
-.card {
-  padding: 2em;
+.item-4 {
+  background-color: #cfb276;
 }
-
-.read-the-docs {
-  color: #888;
+.item-5 {
+  background-color: #6b0803;
 }
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
+.item-6 {
+  background-color: #1c4c56;
 }
-button:hover {
-  border-color: #646cff;
+.item-7 {
+  background-color: #b95f21;
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.item-8 {
+  background-color: #901243;
 }
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.item-9 {
+  background-color: #8bab37;
 }
